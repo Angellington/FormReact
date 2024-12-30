@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/* Definição das variáveis */
+/* Fontes Importadas */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* Estilos gerais */
+body {
+  background-image: url("../images/background/image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(3px);
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #398300;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  border-radius: 8px;
+  height: 70vh;
+  box-shadow: 50px 40px 5px rgba(0, 0, 0, 0.4745098039);
+}
+@media (max-width: 775px) {
+  section {
+    width: 100vw;
+  }
+}
+@media (min-width: 774px) {
+  section {
+    width: 470px;
+  }
+}
+section .Title {
+  width: 80%;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Inter", serif;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5px;
+  border: 2px solid #000;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+section .Title h1 {
+  margin: 0;
+}
+section form {
+  margin: 0 auto;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-top: 20px;
+}
+section form .textField {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+section form .buttonClass {
+  margin: 40px;
+}
+
+/*# sourceMappingURL=form.css.map */

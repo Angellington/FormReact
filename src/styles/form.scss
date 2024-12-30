@@ -1,0 +1,94 @@
+/* Definição das variáveis */
+$desktop: 774px;  // Definição do breakpoint para desktop
+$mobile: 775px;   // Definição do breakpoint para mobile
+
+/* Fontes Importadas */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+$font-inter: 'Inter', serif;
+
+/* Estilos gerais */
+body {
+    background-image: url('../images/background/image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.App {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #398300;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 40px;
+
+    border-radius: 8px;
+
+    height: 70vh;
+
+    box-shadow: 50px 40px 5px #00000079;
+
+
+
+    
+    
+    @media (max-width: $mobile) {
+        width: 100vw;  
+    }
+
+    @media (min-width: $desktop) {
+        width: 470px;  
+    }
+
+    .Title{
+        width: 80%;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: $font-inter;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5px;
+        border: 2px solid #000;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        h1{
+            // background-color: aqua;
+            margin: 0;
+            // padding: 5px;
+        }
+
+    }
+
+    form {
+        // background-color: aqua;
+        margin: 0 auto;
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+
+        margin-top: 20px;
+
+       .textField{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+       }
+       .buttonClass{
+        margin: 40px;
+       }
+    }
+}
+
